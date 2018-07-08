@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/shape_gradient"
+    >
+
+    <TextView
+        android:id="@+id/id_title_text"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_18sp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/id_title_rigtbut"
+        android:layout_width="@dimen/param_34dp"
+        android:layout_height="@dimen/param_28.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="22dp">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="@dimen/param_24.5dp"
+
+            android:layout_height="@dimen/param_27.5dp"
+            android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+            android:background="@mipmap/icon_title_p1"
+
+
+            />
+        <TextView
+            android:layout_width="@dimen/param_19dp"
+            android:layout_height="@dimen/param_19dp"
+            android:background="@drawable/yuan_dian_lan"
+            android:text="8"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_42dp"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginTop="6.5dp"
+        android:layout_width="@dimen/param_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="6.5dp"
+        android:background="@drawable/yuanjiaor_search"
+        android:layout_marginRight="@dimen/param_10dp"
+        android:orientation="horizontal"
+        >
+     <ImageView
+         android:layout_marginLeft="@dimen/param_10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@mipmap/icon_search"
+         android:layout_marginTop="@dimen/param_7dp"
+         android:layout_marginBottom="@dimen/param_6.5dp"
+
+         />
+        <EditText
+            android:paddingLeft="@dimen/param_2dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginTop="@dimen/param_6.5dp"
+            android:layout_width="@dimen/param_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="6.5dp"
+            android:background="@drawable/yuanjiaor_search"
+            android:layout_marginRight="@dimen/param_10dp"
+            />
+
+    </LinearLayout>
+
+<TextView
+    android:layout_gravity="center_vertical"
+    android:layout_width="@dimen/param_48dp"
+    android:layout_height="@dimen/param_28dp"
+     android:text="@string/search"
+    android:gravity="center"
+    android:background="@drawable/yuanjiaored_10dp"
+    android:textColor="@color/white"
+    android:layout_marginRight="@dimen/param_10dp"
+    />
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

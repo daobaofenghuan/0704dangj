@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tm"
+    android:orientation="vertical"
+ >
+
+
+    <LinearLayout
+        android:background="@drawable/yuanjiaowite_11dp"
+        android:layout_marginTop="@dimen/param_80dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/param_20dp"
+        android:layout_marginRight="@dimen/param_20dp"
+        android:layout_marginBottom="@dimen/param_120dp"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+  android:layout_marginBottom="@dimen/param_16dp"
+    android:orientation="vertical"
+
+
+
+
+    >
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_100dp"
+ android:background="@mipmap/icon_everyday_ke"
+
+
+    />
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="@dimen/param_25dp"
+android:layout_marginRight="@dimen/param_23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="    二十四字社会主义核心价值观出自《关于培育和践行社会主义核心价值观的意见》，其主要内容为富强、民主、文明、和谐，自由、平等、公正、法治， 爱国、敬业、诚信、友善。2014年2月12日，《人民日报》登二十四字“社会主义核心价值观”主义核心价值观出自《关于培育和践行社会主义核心价值观的意见》，其主要内容为富强、民主、文明、和谐，自由、平等、公正、法治， 爱国、敬业、诚信、友善。2014年2月12日，《人民日报》登二十四字“社会主义核心价值观”二十四字社会主义核心价值观出自《关于培育和践行社会主义核心价值观的意见》，其主要内容为富强、民主、文明、和谐，自由、平等、公正、法治， 爱国、敬业、诚信、友善。2014年2月12日，《人民日报》登二十四字“社会主义核心价值观”主义核心价值观出自《关于培育和践行社会主"
+        android:textColor="@color/dj_textcolors_hei2"
+
+        android:lineSpacingExtra="@dimen/param_4dp"
+        />
+    </ScrollView>
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+        <ImageView
+
+            android:id="@+id/id_everyday_back"
+            android:layout_width="@dimen/param_38dp"
+            android:layout_height="@dimen/param_38dp"
+            android:src="@mipmap/icon_x"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/param_60dp"
+
+            />
+
+
+
+
+
+</FrameLayout>

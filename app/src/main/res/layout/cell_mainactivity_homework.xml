@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:orientation="vertical"
+
+ >
+<include
+    layout="@layout/item_home_title_ti"
+    />
+  <RelativeLayout
+      android:id="@+id/id_home_tily"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+<TextView
+    android:id="@+id/id_homework_text"
+    android:layout_marginTop="@dimen/param_18.5dp"
+android:layout_marginLeft="@dimen/param_11.5dp"
+    android:layout_marginRight="@dimen/param_18.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_50dp"
+    android:text="@string/homepage_part2_2"
+    android:textColor="@color/dj_textcolors"
+    android:textSize="15sp"
+    />
+
+
+<RelativeLayout
+    android:id="@+id/id_homework_kaishidati"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/id_homework_text"
+    android:layout_width="@dimen/param_125dp"
+    android:layout_height="@dimen/param_40dp"
+    android:layout_marginTop="@dimen/param_12dp"
+    android:layout_marginBottom="@dimen/param_26dp"
+    android:background="@drawable/yuanjiaored"
+    >
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/param_16dp"
+        android:textColor="@color/white"
+        android:text="@string/kaishidati"
+
+        />
+
+
+
+</RelativeLayout>
+  </RelativeLayout>
+
+</LinearLayout>

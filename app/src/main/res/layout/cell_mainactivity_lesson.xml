@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="183.5dp"
+
+    android:background="@color/white"
+
+
+    android:orientation="vertical">
+<include
+    android:id="@+id/id_title_lesson"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+
+    layout="@layout/item_home_title2"
+    />
+<RelativeLayout
+
+    android:layout_marginTop="@dimen/param_13dp"
+    android:layout_marginBottom="@dimen/param_13dp"
+    android:id="@+id/id_lesson_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pic_home1"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="@dimen/param_10dp"
+    >
+
+<TextView
+    android:layout_marginTop="@dimen/param_7dp"
+    android:layout_marginRight="@dimen/param_8dp"
+    android:layout_marginLeft="@dimen/param_14dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text= "@string/homepage_part3_2"
+    android:textColor="@color/dj_textcolor_part3"
+    android:lineSpacingExtra="5dp"
+    android:textSize="15sp"
+    android:ellipsize="end"
+    android:layout_marginBottom="@dimen/param_3dp"
+
+    />
+
+</RelativeLayout>
+
+
+</LinearLayout>

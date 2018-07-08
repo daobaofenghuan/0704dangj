@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_all"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:id="@+id/id_question_timushu"
+        android:layout_width="@dimen/param_23dp"
+        android:layout_height="@dimen/param_25dp"
+        android:layout_marginBottom="@dimen/param_13dp"
+        android:layout_marginLeft="@dimen/param_11dp"
+        android:layout_marginRight="@dimen/param_11dp"
+        android:background="@drawable/biankuang_xuxian_dim_8dp"
+        android:gravity="center" />
+
+<RelativeLayout
+    android:id="@+id/id_question2_rightly"
+    android:layout_width="@dimen/param_11.5dp"
+    android:layout_height="@dimen/param_11.5dp"
+    android:background="@drawable/yuan_dian_white"
+    android:layout_marginLeft="@dimen/param_27dp"
+    android:layout_marginTop="@dimen/param_15dp"
+
+    >
+ <ImageView
+     android:layout_width="@dimen/param_10dp"
+     android:layout_height="@dimen/param_10dp"
+     android:layout_centerInParent="true"
+     android:src="@mipmap/icon_yandian_right"
+     />
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_question2_wrongly"
+        android:layout_width="@dimen/param_11.5dp"
+        android:layout_height="@dimen/param_11.5dp"
+        android:background="@drawable/yuan_dian_white"
+        android:layout_marginLeft="@dimen/param_27dp"
+        android:layout_marginTop="@dimen/param_15dp"
+
+        >
+        <ImageView
+            android:layout_width="@dimen/param_10dp"
+            android:layout_height="@dimen/param_10dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_wrong"
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

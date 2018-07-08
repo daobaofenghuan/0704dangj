@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/id_title_event"
+        layout="@layout/item_home_title2"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/param_40dp" />
+
+    <LinearLayout
+
+        android:layout_marginBottom="@dimen/param_14dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginRight="@dimen/param_10dp"
+        android:layout_marginTop="@dimen/param_17dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_44dp"
+android:orientation="horizontal"
+
+        android:background="@color/dj_yuandian"
+
+      >
+
+        <TextView
+
+            android:id="@+id/id_fw_text1"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="党章党规"
+          android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors_hei2"
+            tools:targetApi="lollipop" />
+        <TextView
+            android:id="@+id/id_fw_text2"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="系列讲话"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors_hei2"
+            tools:ignore="UnusedAttribute" />
+        <TextView
+            android:id="@+id/id_fw_text3"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="先锋故事"
+
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_jinxingzhong"/>
+        <TextView
+            android:id="@+id/id_fw_text4"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="先锋故事事迹"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors_hei2"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/param_14dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginRight="@dimen/param_10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_44dp"
+        android:orientation="horizontal"
+
+        android:background="@color/dj_yuandian">
+        <TextView
+            android:id="@+id/id_fw_text21"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="治党治国"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors_hei2"/>
+        <TextView
+            android:id="@+id/id_fw_text22"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="系列讲话"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors_hei2"/>
+        <TextView
+            android:id="@+id/id_fw_text23"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="系列讲话"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors_hei2"/>
+        <TextView
+            android:id="@+id/id_fw_text24"
+            android:layout_margin="@dimen/param_0.5dp"
+            android:background="@color/white"
+            android:text="更多"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/param_12dp"
+            android:textColor="@color/dj_textcolors_hei2"/>
+
+    </LinearLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_113dp"
+android:src="@mipmap/icon_test_banner"
+    />
+</LinearLayout>

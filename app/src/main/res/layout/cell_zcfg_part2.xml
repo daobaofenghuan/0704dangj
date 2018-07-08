@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+    <View
+        android:layout_marginLeft="@dimen/param_27.5dp"
+        android:layout_width="@dimen/param_1dp"
+        android:layout_height="@dimen/param_22dp"
+        android:background="@color/dj_dim" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_16dp"
+
+    android:layout_marginLeft="@dimen/param_25dp"
+    >
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/param_5dp"
+        android:layout_height="@dimen/param_5dp"
+        android:background="@drawable/yuan_dian_red"
+
+        />
+    <TextView
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/param_14dp"
+        android:textColor="@color/dj_textcolors_hei2"
+        android:text="党章1867条服务"
+        />
+
+
+</LinearLayout>
+
+</LinearLayout>

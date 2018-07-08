@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_118dp"
+
+    android:background="@color/white"
+
+
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cell_homepage_eventpart1"
+    >
+
+    <ImageView
+        android:id="@+id/id_home_event_img"
+        android:layout_width="@dimen/param_115dp"
+        android:layout_height="@dimen/param_86dp"
+        android:layout_marginLeft="@dimen/param_9.5dp"
+        android:layout_marginTop="@dimen/param_11.5dp"
+        android:background="@mipmap/test_pic_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/id_home_event_img"
+        android:orientation="vertical"
+
+        android:paddingLeft="@dimen/param_7.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/param_9.5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/param_40dp"
+                android:layout_height="@dimen/param_22dp"
+
+                android:layout_alignTop="@+id/id_home_event_zhuti"
+                android:layout_toLeftOf="@+id/id_home_event_zhuti"
+                android:gravity="center_vertical"
+                android:text="主题："
+                android:textSize="@dimen/param_13dp"
+
+                />
+
+            <TextView
+                android:id="@+id/id_home_event_zhuti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxEms="12"
+                android:singleLine="true"
+                android:ellipsize="end"
+
+                android:layout_marginRight="@dimen/param_7.5dp"
+
+                android:paddingTop="@dimen/param_1.5dp"
+                android:text="历史记忆中的长征"
+                android:textColor="@color/dj_textcolors"
+
+                android:textSize="@dimen/param_15dp" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/param_2.5dp"
+            android:layout_marginLeft="@dimen/param_40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_0.5dp"
+            android:background="@color/dj_dim"
+            android:alpha="0.16"
+            android:layout_marginRight="@dimen/param_22dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/param_9.5dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/param_40dp"
+                android:layout_height="@dimen/param_22dp"
+
+                android:gravity="center_vertical"
+                android:text="时间："
+                android:textSize="@dimen/param_13dp"
+
+                />
+
+            <TextView
+                android:id="@+id/id_home_event_shijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/param_22dp"
+
+                android:ellipsize="end"
+                android:maxLines="1"
+
+                android:paddingTop="1.5dp"
+                android:text="2018年3月7日"
+                android:textColor="@color/dj_textcolor_org"
+
+                android:textSize="@dimen/param_15dp" />
+
+        </LinearLayout>
+<View
+    android:layout_marginTop="@dimen/param_2.5dp"
+    android:layout_marginLeft="@dimen/param_40dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_0.5dp"
+    android:background="@color/dj_dim"
+    android:alpha="0.16"
+    android:layout_marginRight="@dimen/param_22dp"
+    />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/param_9.5dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="@dimen/param_40dp"
+                android:layout_height="@dimen/param_22dp"
+
+                android:layout_alignTop="@+id/id_home_event_zhuti"
+                android:layout_toLeftOf="@+id/id_home_event_zhuti"
+                android:gravity="center_vertical"
+                android:text="状态："
+                android:textSize="@dimen/param_13dp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/id_home_event_zhuangtai"
+                android:layout_width="@dimen/param_67dp"
+                android:layout_height="@dimen/param_22.5dp"
+                android:gravity="center"
+
+                android:background="@drawable/yuanjiao_yiwancheng"
+                android:ellipsize="end"
+                android:maxLines="1"
+
+
+                android:text="已完成"
+                android:textColor="@color/text_light_gray"
+
+                android:textSize="@dimen/param_15dp" />
+
+
+            <TextView
+
+                android:id="@+id/id_home_event_zhuangtai2"
+                android:layout_width="@dimen/param_67dp"
+                android:layout_height="@dimen/param_22.5dp"
+                android:gravity="center"
+                android:background="@drawable/yuanjiao_jinxingzhong"
+                android:ellipsize="end"
+                android:maxLines="1"
+
+
+                android:text="进行中"
+                android:textColor="@color/dj_jinxingzhong"
+                android:textSize="@dimen/param_15dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+    <RelativeLayout
+android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_35dp"
+        android:background="@color/dj_bj_fen"
+        >
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="@dimen/param_27dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="@dimen/param_4.5dp"
+                android:layout_height="@dimen/param_10.5dp"
+                android:background="@color/dj_liangxuetitileorg"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_hometitle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_21dp"
+            android:text="两学一做"
+            android:layout_marginTop="@dimen/param_5dp"
+            android:layout_marginBottom="@dimen/param_6dp"
+            android:layout_marginLeft="@dimen/param_19dp"
+            android:textColor="@color/dj_textcolor_title"
+            android:textSize="@dimen/param_15dp"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/param_7.5dp"
+            android:layout_height="@dimen/param_10dp"
+            android:src="@mipmap/icon_right_org"
+            android:layout_marginRight="@dimen/param_10.5dp"
+            />
+
+        <TextView
+            android:id="@+id/id_item_rtext"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_18.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/param_6.5dp"
+            android:layout_marginRight="@dimen/param_24dp"
+            android:layout_marginTop="@dimen/param_7dp"
+            android:textColor="@color/dj_textcolor_title"
+            android:text="@string/more"
+            android:textSize="@dimen/param_13dp" />
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10.5dp"
+        android:src="@mipmap/icon_test_meng" />
+
+    <TextView
+        android:paddingLeft="@dimen/param_10dp"
+        android:paddingRight="@dimen/param_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力紧紧围特开展党日活动“观看电影  厉害了 我的国”"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2.5dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_toLeftOf="@+id/id_showresult_dangzhibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="党组织："
+
+android:visibility="invisible"
+            />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/id_showresult_dangzhibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="XXX党支部"
+            android:textColor="@color/dj_textcolors"
+            android:layout_marginBottom="@dimen/param_10dp"
+            android:layout_marginRight="@dimen/param_10dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
+    <include
+        layout="@layout/dim"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10.5dp"
+            android:src="@mipmap/icon_test_meng" />
+
+        <TextView
+            android:paddingLeft="@dimen/param_10dp"
+            android:paddingRight="@dimen/param_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力紧紧围特开展党日活动“观看电影  厉害了 我的国”"
+
+            />
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2.5dp"
+            >
+            <TextView
+                android:layout_toLeftOf="@+id/id_showresult_dangzhibu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="党组织："
+
+                android:visibility="invisible"
+                />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/id_showresult_dangzhibu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="XXX党支部"
+                android:textColor="@color/dj_textcolors"
+                android:layout_marginBottom="@dimen/param_10dp"
+                android:layout_marginRight="@dimen/param_10dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

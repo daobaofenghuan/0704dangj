@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/id_title_event"
+        layout="@layout/item_home_title"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/param_40dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0.5dp"
+        android:background="@color/dj_dim"
+        android:alpha="0.16"
+        />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_142dp"
+    android:orientation="vertical"
+    >
+    
+    <TextView
+        android:id="@+id/id_sevice_shenqing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_40dp"
+        android:layout_marginTop="@dimen/param_22dp"
+        android:background="@drawable/yuanjiaored_8dp"
+        android:layout_marginRight="@dimen/param_10dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:text="@string/service_help"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/param_15dp"
+
+        />
+    <TextView
+        android:id="@+id/id_sevice_jyxc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_40dp"
+        android:layout_marginTop="@dimen/param_19dp"
+
+        android:background="@drawable/yuanjiaowite_8dp"
+        android:layout_marginRight="@dimen/param_10dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:text="建言献策"
+        android:gravity="center"
+        android:textColor="@color/dj_textcolor_org"
+        android:textSize="@dimen/param_15dp"
+        />
+
+
+    
+</LinearLayout>
+
+
+
+</LinearLayout>

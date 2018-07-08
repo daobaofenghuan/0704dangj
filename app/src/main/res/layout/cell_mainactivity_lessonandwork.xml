@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/param_11dp"
+    android:layout_marginBottom="@dimen/param_11dp"
+
+ >
+    <RelativeLayout
+        android:id="@+id/id_homework_kaishidati"
+android:layout_weight="1"
+        android:layout_marginRight="@dimen/param_4.5dp"
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_56dp"
+        android:background="@mipmap/icon_bg_workandlesson"
+
+        >
+        <LinearLayout
+            android:layout_width="@dimen/param_27dp"
+            android:layout_height="match_parent"
+android:visibility="gone"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="@dimen/param_4.5dp"
+                android:layout_height="@dimen/param_10.5dp"
+                android:background="@color/dj_bj_huang"
+android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/id_hometitle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_21dp"
+            android:text="每日一题"
+            android:layout_marginTop="@dimen/param_5dp"
+            android:layout_marginBottom="@dimen/param_6dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:textColor="@color/dj_textcolor_title2"
+            android:textSize="@dimen/param_15dp"
+            />
+
+<RelativeLayout
+    android:layout_width="@dimen/param_5dp"
+    android:layout_height="@dimen/param_5dp"
+    android:background="@drawable/yuan_dian_red"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@id/id_lessonandwork_text"
+    android:layout_marginRight="@dimen/param_2dp"
+   />
+        <TextView
+
+            android:id="@+id/id_lessonandwork_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_18.5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/param_10dp"
+
+            android:text="未答题"
+          android:textColor="@color/dj_textcolor_title"
+            android:textSize="@dimen/param_10dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+android:layout_weight="1"
+        android:layout_marginLeft="@dimen/param_4.5dp"
+        android:layout_marginRight="@dimen/param_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_56dp"
+        android:background="@mipmap/icon_bg_workandlesson2"
+
+        >
+        <LinearLayout
+android:visibility="gone"
+            android:layout_width="@dimen/param_27dp"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/param_4.5dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/dj_bj_huang" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/id_hometitle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_21dp"
+            android:text="每日一课"
+            android:layout_marginTop="@dimen/param_5dp"
+            android:layout_marginBottom="@dimen/param_6dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:textColor="@color/dj_textcolor_title"
+            android:textSize="@dimen/param_15dp"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/param_5dp"
+            android:layout_height="@dimen/param_5dp"
+            android:background="@drawable/yuan_dian_red"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/id_lessonandwork_text2"
+            android:layout_marginRight="@dimen/param_2dp"
+            />
+        <TextView
+
+            android:id="@+id/id_lessonandwork_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/param_18.5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/param_10dp"
+
+            android:text="未阅读"
+            android:textColor="@color/dj_textcolor_title"
+            android:textSize="@dimen/param_10dp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:id="@+id/id_jcfcly"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+<include
+        android:id="@+id/id_title_event"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        layout="@layout/item_home_title2"
+        />
+
+
+   <ImageView
+       android:layout_marginTop="10.5dp"
+       android:layout_marginLeft="@dimen/param_10dp"
+       android:layout_marginRight="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="181dp"
+       android:src="@mipmap/test_pic_3"
+       />
+
+<TextView
+    android:paddingLeft="@dimen/param_10dp"
+    android:paddingRight="@dimen/param_10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="   为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力紧紧围特开展党日活动“观看电影  厉害了 我的国”"
+
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2.5dp"
+    >
+    <TextView
+        android:layout_toLeftOf="@+id/id_showresult_dangzhibu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="党组织："
+
+
+        />
+    <TextView
+        android:id="@+id/id_showresult_dangzhibu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="XXX党支部"
+        android:textColor="@color/dj_textcolors"
+        android:layout_marginBottom="@dimen/param_10dp"
+        android:layout_marginRight="@dimen/param_10dp"
+        />
+
+</RelativeLayout>
+
+
+</LinearLayout>

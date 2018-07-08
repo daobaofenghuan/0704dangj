@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 填充颜色 -->
+    <solid android:color="#FFFFFF" />
+    <!-- 线的宽度，颜色灰色  虚线间隔虚线XX 许县高度-->
+    <stroke
+        android:dashGap="@dimen/param_2dp"
+        android:dashWidth="@dimen/param_2dp"
+        android:width="@dimen/param_1dp"
+
+
+        android:color="@color/dj_textcolorhui" />
+    <!-- 矩形的圆角半径 -->
+    <corners android:radius="@dimen/param_3dp" />
+</shape>

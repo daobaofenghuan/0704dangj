@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tm"
+    android:orientation="vertical"
+ >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_0dp"
+    android:layout_weight="12"
+
+    >
+
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="69"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0dp"
+        android:layout_marginLeft="@dimen/param_20dp"
+        android:layout_marginRight="@dimen/param_20dp"
+
+
+        android:background="@drawable/yuanjiaowite_11dp"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_100dp"
+            android:background="@mipmap/icon_bg_ti"
+
+
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_25dp"
+            android:layout_marginRight="@dimen/param_23dp"
+
+            android:text="我国已由高速增长阶段转向（ ）阶段。"
+            android:textColor="@color/dj_textcolors_hei2"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/param_10dp"
+                android:layout_marginRight="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_15dp"
+                android:background="@drawable/biankuang_dim_8dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/param_8dp"
+                android:paddingLeft="@dimen/param_10dp"
+                android:paddingTop="@dimen/param_8dp"
+
+                >
+
+                <CheckBox
+
+                    style="@style/CustomRadioBtn"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/param_8dp"
+                    android:text="A.中速低增长"
+                    android:textColor="@color/dj_textcolors_hei2"
+                    android:textSize="@dimen/param_13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/param_10dp"
+                android:layout_marginRight="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_15dp"
+                android:background="@drawable/biankuang_dim_8dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/param_8dp"
+                android:paddingLeft="@dimen/param_10dp"
+                android:paddingTop="@dimen/param_8dp"
+
+                >
+
+                <CheckBox
+
+                    style="@style/CustomRadioBtn"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/param_8dp"
+                    android:text="A.中速低增长"
+                    android:textColor="@color/dj_textcolors_hei2"
+                    android:textSize="@dimen/param_13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/param_10dp"
+                android:layout_marginRight="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_15dp"
+                android:background="@drawable/biankuang_dim_8dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/param_8dp"
+                android:paddingLeft="@dimen/param_10dp"
+                android:paddingTop="@dimen/param_8dp"
+
+                >
+
+                <CheckBox
+
+                    style="@style/CustomRadioBtn"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/param_8dp"
+                    android:text="A.中速低增长"
+                    android:textColor="@color/dj_textcolors_hei2"
+                    android:textSize="@dimen/param_13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/param_10dp"
+                android:layout_marginRight="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_15dp"
+                android:background="@drawable/biankuang_dim_8dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/param_8dp"
+                android:paddingLeft="@dimen/param_10dp"
+                android:paddingTop="@dimen/param_8dp"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/id_checkbox_A"
+                    style="@style/CustomRadioBtn"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/param_8dp"
+                    android:text="A.中速低增长"
+                    android:textColor="@color/dj_textcolors_hei2"
+                    android:textSize="@dimen/param_13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/param_115dp"
+            android:layout_height="@dimen/param_42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/param_36dp"
+            android:layout_marginTop="@dimen/param_36dp"
+            android:background="@drawable/yuanjiaored_3dp"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0dp"
+        android:layout_weight="20"
+
+        >
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id_everyday_back"
+            android:layout_width="@dimen/param_38dp"
+            android:layout_height="@dimen/param_38dp"
+            android:src="@mipmap/icon_x"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/param_20dp"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

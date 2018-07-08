@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+<include
+        android:id="@+id/id_title_event"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        layout="@layout/item_home_title"
+        />
+
+
+
+
+    <include
+        android:id="@+id/id_title_event2"
+
+
+        layout="@layout/cell_mainactivity_event_part2"
+        />
+    <include
+        android:id="@+id/id_title_event1"
+
+
+        layout="@layout/cell_mainactivity_event_part1"
+        />
+</LinearLayout>

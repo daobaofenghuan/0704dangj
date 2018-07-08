@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+
+
+<RelativeLayout
+    android:id="@+id/id_zcfg_ly1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_20dp"
+   android:layout_marginTop="@dimen/param_15dp"
+    android:layout_marginLeft="@dimen/param_22.5dp"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/param_20dp"
+        android:layout_height="@dimen/param_15dp"
+        android:background="@mipmap/icon_wenjian_hong"
+
+        />
+    <TextView
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/param_14dp"
+        android:textColor="@color/dj_textcolors_hei2"
+        android:text="党章"
+        />
+</LinearLayout>
+
+<ImageView
+  android:layout_alignParentRight="true"
+    android:layout_width="@dimen/param_11dp"
+    android:layout_height="@dimen/param_9dp"
+    android:src="@mipmap/icon_down"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="@dimen/param_10dp"
+    />
+
+</RelativeLayout>
+
+</LinearLayout>
