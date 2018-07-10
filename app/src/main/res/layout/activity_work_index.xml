@@ -14,6 +14,7 @@
     android:layout_marginLeft="@dimen/param_10dp"
     >
 <TextView
+    android:id="@+id/id_work_theme"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
 android:textSize="@dimen/param_14dp"

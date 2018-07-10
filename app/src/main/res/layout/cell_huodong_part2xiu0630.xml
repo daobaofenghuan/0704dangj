@@ -120,10 +120,13 @@ android:textSize="@dimen/param_14dp"
    </LinearLayout>
 
    <TextView
+       android:paddingTop="@dimen/param_15dp"
+       android:paddingBottom="@dimen/param_15dp"
        android:id="@+id/id_huodong_fkrenyuan"
        android:layout_marginTop="@dimen/param_15dp"
        android:layout_marginBottom="@dimen/param_15dp"
        android:layout_width="match_parent"
+       android:background="@color/dj_hui"
 
        android:layout_height="wrap_content"
        android:layout_marginLeft="@dimen/param_10dp"

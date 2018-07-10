@@ -1,6 +1,5 @@
 package com.sindcreate.dj.comm;
 
-import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -126,22 +125,61 @@ public static void getSanhuiIng(Handler mhandler,int part) {
     public static void getHuodong(Handler mhandler,String workid,int Part){
         String url = Urls.BASE_URL + Urls.DANGWU_INDEX+"/"+workid;
         //  Params=new PostParams();
-        NewsParams params = new NewsParams();
 
 
-        Postgetdata(url, params, mhandler,Part);
+
+        Postgetdata(url, null, mhandler,Part);
 
 
     }
     //8签到
-    public static void ClickQianDao(Handler mhandler,String workid){
-        String url = Urls.BASE_URL + Urls.DANGWU_INDEX+"/"+workid;
+    public static void ClickQianDao(Handler mhandler,String workid,String whereareyouqiandao){
+        String url = Urls.BASE_URL + Urls.QIAN_DAO;
 
+        Params = new PostParams();
+        Params.partyAffairsDetailId=workid;
+        Params.registerPlace=whereareyouqiandao;
+        Postgetdata(url, Params, mhandler);
 
 
 
     }
+    //9每日一课
+    public static void getEveryDayKeID(Handler mhandler){
+        String url = Urls.BASE_URL + Urls.GET_EVERY_DAY_KE_ID;
+        Postgetdata(url,null,mhandler);
 
+    }
+    //10每日一课详细
+    public static void getEveryDayKe(Handler mhandler,String lessonID){
+        String url = Urls.BASE_URL + Urls.GET_EVERY_DAY_KE+lessonID;
+        Postgetdata(url,null,mhandler);
+
+    }
+    //11工作任务
+    public  static void getWorkData(Handler mhandler){
+        String url = Urls.BASE_URL + Urls.GET_WORK_DATA;
+        Postgetdatas(url,null,mhandler);
+
+    }
+
+    public  static void getWorkDataIndex(Handler mhandler,String workid){
+        String url = Urls.BASE_URL + Urls.    GET_WORK_INDEX+workid;
+        Postgetdata(url,null,mhandler);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //==========================================================================================================================================
 
     //下面为基本链接
     private static void Post(final String url, final PostParams params, final Handler handler) {
@@ -292,8 +330,8 @@ public static void getSanhuiIng(Handler mhandler,int part) {
                     if (value == 200) {
 
                             msg.what = COMM.OK;
-                        JSONArray jsonArray = jsonObject.getJSONArray("data");
-                        msg.obj = jsonArray.toString();
+                       msg.obj = jsonObject.getString("data");
+
 
                     } else {
                         msg.what = COMM.Failed;

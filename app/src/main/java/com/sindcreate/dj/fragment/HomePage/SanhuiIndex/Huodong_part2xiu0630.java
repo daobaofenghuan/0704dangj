@@ -42,7 +42,7 @@ public class Huodong_part2xiu0630 extends RVBaseCell<HuoDongBean> {
      holder.getTextView(R.id.id_huodong_time).setText(mData.getPartyAffairsTime());
      holder.getTextView(R.id.id_huodong_space).setText(mData.getPartyAffairsPlace());
 holder.getTextView(R.id.id_huodong_stoptime).setText(mData.getPartyAffairsTime());
-holder.getTextView(R.id.id_huodong_fkrenyuan).setText(mData.getPartyAffairsContent());
+holder.getTextView(R.id.id_huodong_fkrenyuan).setText("   "+mData.getPartyAffairsContent());
 
 
     }

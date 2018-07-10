@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.bean.Mydata;
+import com.sindcreate.dj.comm.params.MHandler;
 import com.sindcreate.dj.fragment.HomePage.Question1start_Fragment;
 import com.sindcreate.dj.fragment.HomePage.Question2_Fragment;
 import com.sindcreate.dj.fragment.HomePage.Question3_Fragment;
@@ -26,9 +27,10 @@ Question1start_Fragment fragment;
 Question2_Fragment fragment2;
 Question3_Fragment fragment3;
 @SuppressLint("HandlerLeak")
-private Handler handler=new Handler(){
+private MHandler handler=new MHandler(){
     @Override
     public void handleMessage(Message msg) {
+        super.handleMessage(msg);
         FragmentManager fragmentManager=getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction transaction=   fragmentManager.beginTransaction();
         transaction.setTransition(android.support.v4.app.FragmentTransaction.TRANSIT_FRAGMENT_FADE);

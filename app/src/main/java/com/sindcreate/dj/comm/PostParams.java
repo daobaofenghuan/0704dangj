@@ -22,9 +22,13 @@ public class PostParams {
     public String name;
     public String headdata;
 
-
+//dangjian
     public String  account;
     public String passwd;
+    public String partyAffairsDetailId; //任务ID
+
+    public String registerPlace;//签到地点
+
 
 
 

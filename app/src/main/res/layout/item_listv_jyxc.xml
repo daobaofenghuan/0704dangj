@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_70dp"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/id_jyxctemly1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_17dp"
+        android:layout_marginRight="@dimen/param_115dp"
+        android:layout_marginTop="@dimen/param_12dp"
+        android:gravity="center_vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:maxEms="15"
+            android:ellipsize="end"
+            android:textColor="@color/dj_textcolors_hei2"
+            android:singleLine="true"
+            android:text="应急管理部有关负责人就有关负…"
+
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/param_22dp"
+        android:layout_below="@+id/id_jyxctemly1"
+        android:layout_marginTop="@dimen/param_6dp"
+        android:layout_marginBottom="@dimen/param_9dp"
+        android:gravity="center_vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:text="发布时间：2018-5-24 13:00"
+            android:textColor="@color/dj_textcolorhui"
+            android:textSize="12dp"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+<LinearLayout
+    android:layout_marginRight="@dimen/param_17dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    >
+
+    <TextView
+        android:id="@+id/id_weibaoming"
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/param_12dp"
+
+        android:background="@drawable/yuan_dian_red_14d"
+
+        android:gravity="center"
+
+        android:text="!"
+        android:textColor="@color/white"
+        android:textSize="@dimen/param_12dp" />
+
+
+    <TextView
+        android:layout_below="@+id/id_weibaoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="@dimen/param_15dp"
+
+        android:text="未处理"
+        android:textColor="@color/dj_jinxingzhong"
+
+
+        android:layout_marginTop="@dimen/param_7.5dp"
+        />
+
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/param_0.5dp"
+    android:background="@color/dj_dim"
+    android:alpha="0.16"
+android:layout_alignParentBottom="true"
+
+
+    />
+
+
+</RelativeLayout>

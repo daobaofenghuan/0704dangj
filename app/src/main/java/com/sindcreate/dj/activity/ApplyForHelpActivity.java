@@ -51,6 +51,7 @@ public class ApplyForHelpActivity extends BaseActivity {
     private Handler mhandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
+            super.handleMessage(msg);
             if (msg.what == MsgNum.OK) {
                 int postion = (int) msg.obj;
                 listdata.remove(postion);

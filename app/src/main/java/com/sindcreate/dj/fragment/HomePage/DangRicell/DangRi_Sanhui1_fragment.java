@@ -43,6 +43,7 @@ public class DangRi_Sanhui1_fragment extends Fragment {
     private Handler mhandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
+            super.handleMessage(msg);
             if (msg.what == MsgNum.Part1) {
                 String data = (String) msg.obj;
                 Gson gson = new Gson();

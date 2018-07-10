@@ -22,6 +22,7 @@ import com.sindcreate.dj.adapter.listviewadapter.SanhuiListAdapter;
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.comm.CommUtil;
 import com.sindcreate.dj.comm.bean.SanHuiBean;
+import com.sindcreate.dj.comm.params.MHandler;
 
 import java.util.ArrayList;
 
@@ -40,9 +41,10 @@ public class DangRi_Sanhui2_fragment extends Fragment {
 
     ArrayList<SanHuiBean> list=new ArrayList<>();
     @SuppressLint("HandlerLeak")
-    private Handler mhandler = new Handler() {
+    private MHandler mhandler = new MHandler() {
         @Override
         public void handleMessage(Message msg) {
+            super.handleMessage(msg);
             if (msg.what == MsgNum.Part2) {
                 String data = (String) msg.obj;
                 Gson gson = new Gson();

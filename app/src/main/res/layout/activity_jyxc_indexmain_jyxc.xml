@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+android:orientation="vertical"
+    >
+    <include
+        layout="@layout/title_back"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include
+                layout="@layout/activity_jyxc_index_jyxc"
+                />
+            <TextView
+                android:layout_marginLeft="@dimen/param_15dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/param_15dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/param_13dp"
+                android:textColor="@color/dj_textcolors_hei"
+                android:text="    为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力..."
+                android:layout_marginBottom="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_10dp"
+                />
+
+            <include
+
+                layout="@layout/dim"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginTop="@dimen/param_8dp"
+                android:layout_marginLeft="@dimen/param_2.5dp"
+                android:layout_marginRight="@dimen/param_10dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="@dimen/param_15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dj_textcolorhui"
+                    android:layout_marginLeft="@dimen/param_15dp"
+                    android:text="XX组织批复"
+                    android:textSize="@dimen/param_13dp"
+
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/param_15dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/param_11dp"
+                >
+                <ImageView
+                    android:layout_width="@dimen/param_18dp"
+                    android:layout_height="@dimen/param_18dp"
+
+                    android:src="@mipmap/icon_dui"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/param_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/param_13dp"
+                    android:textColor="@color/dj_textcolors_hei2"
+                    android:text="毛启玲"
+                    />
+                <TextView
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dj_textcolors_hei2"
+                    android:textSize="@dimen/param_12dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/param_11dp"
+                    android:text="2018-06-24 10:24"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_marginLeft="@dimen/param_15dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/param_15dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/param_13dp"
+                android:textColor="@color/dj_textcolors_hei"
+                android:text="    为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力..."
+                android:layout_marginBottom="@dimen/param_10dp"
+                android:layout_marginTop="@dimen/param_18dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

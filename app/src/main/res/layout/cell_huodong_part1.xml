@@ -20,6 +20,7 @@
           android:src="@mipmap/icon_danghui_1" />
 
       <TextView
+          android:id="@+id/id_huodong_theme"
           android:layout_width="wrap_content"
           android:layout_height="@dimen/param_21dp"
           android:layout_marginBottom="@dimen/param_5dp"
@@ -33,6 +34,7 @@
           />
 
       <TextView
+          android:visibility="invisible"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignParentRight="true"

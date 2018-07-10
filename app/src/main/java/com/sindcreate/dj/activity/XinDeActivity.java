@@ -23,6 +23,7 @@ import com.sindcreate.dj.adapter.recycleradapter.XindeHelpAdapter;
 import com.sindcreate.dj.base.BaseActivity;
 import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.bean.Mydata;
+import com.sindcreate.dj.comm.params.MHandler;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -53,9 +54,11 @@ public class XinDeActivity extends Activity {
     List<Bitmap> listdata = new ArrayList<>();
 
     @SuppressLint("HandlerLeak")
-    private Handler mhandler = new Handler() {
+    private MHandler mhandler = new MHandler() {
         @Override
         public void handleMessage(Message msg) {
+
+            super.handleMessage(msg);
             if (msg.what == MsgNum.OK) {
                 int postion = (int) msg.obj;
                 listdata.remove(postion);

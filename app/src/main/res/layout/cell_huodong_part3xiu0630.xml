@@ -92,6 +92,7 @@ android:src="@mipmap/icon_addbule"
         />
 
     <TextView
+        android:id="@+id/id_huodng_weidu"
         android:layout_marginLeft="@dimen/param_4dp"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
@@ -109,6 +110,7 @@ android:src="@mipmap/icon_addbule"
         />
 
     <TextView
+        android:id="@+id/id_huodong_weiqiandao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/param_4dp"
@@ -125,6 +127,7 @@ android:layout_marginLeft="@dimen/param_20dp"
         />
 
     <TextView
+        android:id="@+id/id_huodong_yishangchuan"
         android:layout_marginLeft="@dimen/param_4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

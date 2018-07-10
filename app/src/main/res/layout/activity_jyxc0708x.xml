@@ -9,12 +9,11 @@
 <include
     layout="@layout/title_back"
     />
-<RelativeLayout
-    android:id="@+id/contain_jyxc"
+<ListView
+    android:id="@+id/list_item"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</RelativeLayout>
-
+</ListView>
 
 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.JYXC_Activity">
+    tools:context=".activity.JYXCandXQBF_Activity">
 <include
     layout="@layout/title_back"
     />

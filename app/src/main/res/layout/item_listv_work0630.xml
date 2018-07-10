@@ -45,6 +45,7 @@
             />
 
         <TextView
+            android:id="@+id/id_work_name"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/param_22dp"
             android:layout_below="@+id/id_itemwork_textsj"

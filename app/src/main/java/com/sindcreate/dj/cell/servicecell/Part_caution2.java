@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.ApplyForHelpActivity;
-import com.sindcreate.dj.activity.JYXC_Activity;
+import com.sindcreate.dj.activity.JYXCandXQBF_Activity;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
 import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.bean.Mydata;
@@ -60,7 +60,7 @@ public class Part_caution2 extends RVBaseCell<Entry> {
         textjyxc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Mydata.context.startActivity(new Intent(Mydata.context, JYXC_Activity.class));
+                Mydata.context.startActivity(new Intent(Mydata.context, JYXCandXQBF_Activity.class));
             }
         });
 

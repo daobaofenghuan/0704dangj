@@ -48,7 +48,7 @@
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             />
-        <activity android:name=".activity.JYXC_Activity"
+        <activity android:name=".activity.JYXCandXQBF_Activity"
             android:screenOrientation="portrait"
 
             />
@@ -71,7 +71,7 @@
         <activity android:name=".activity.JiFenActivity"
             android:screenOrientation="portrait"
             />
-        <activity android:name=".activity.EveryDayActivity"
+        <activity android:name=".activity.EveryDayActivityTi"
 
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
 
@@ -82,7 +82,7 @@
             />
         <activity android:name=".activity.XinDeActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
-            android:screenOrientation="portrait"
+
             />
         <activity android:name=".activity.ZengCeFaGui_Activity"
 
@@ -92,7 +92,10 @@
 
             android:screenOrientation="portrait"
             />
+        <activity android:name=".activity.JYXCandXQBF_Index_Activity"
 
+            android:screenOrientation="portrait"
+            />
 
         <!--<activity-->
             <!--android:name="com.yanzhenjie.album.AlbumActivity"-->

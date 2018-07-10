@@ -8,7 +8,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sindcreate.dj.R;
-import com.sindcreate.dj.activity.EveryDayActivity;
+import com.sindcreate.dj.activity.EveryDayActivityTi;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
 import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
 import com.sindcreate.dj.bean.Mydata;
@@ -40,7 +40,7 @@ public class Part_EveryDayHomework extends RVBaseCell<Entry> {
         everydatetistart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Mydata.context.startActivity(new Intent(Mydata.context, EveryDayActivity.class));
+                Mydata.context.startActivity(new Intent(Mydata.context, EveryDayActivityTi.class));
             }
         });
         final RelativeLayout relativeLayout = view.getRelativeLayout(R.id.id_home_tily);

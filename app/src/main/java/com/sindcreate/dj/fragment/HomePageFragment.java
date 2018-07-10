@@ -33,6 +33,7 @@ import com.sindcreate.dj.cell.homemaincell.Part_Showresult;
 import com.sindcreate.dj.cell.homemaincell.Partone;
 import com.sindcreate.dj.comm.CommUtil;
 import com.sindcreate.dj.comm.bean.NewsBean;
+import com.sindcreate.dj.comm.params.MHandler;
 import com.sindcreate.dj.model.Entry;
 
 import java.lang.reflect.Array;
@@ -52,9 +53,10 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
 
     private ArrayList<NewsBean> newslist = new ArrayList<>();
     @SuppressLint("HandlerLeak")
-    private Handler mhandler = new Handler() {
+    private MHandler mhandler = new MHandler() {
         @Override
         public void handleMessage(Message msg) {
+            super.handleMessage(msg);
             if (msg.what == MsgNum.OK) {
                 String data = (String) msg.obj;
                 Gson gson = new Gson();

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -46,21 +47,21 @@ public class Part_Event extends RVBaseCell<Entry> {
 
           // zhuti.getPaint().setFlags(Paint. UNDERLINE_TEXT_FLAG ); //下划线
         texttitle.setText("两学一做");
-//        RelativeLayout relativeLayout= view.getRelativeLayout(R.id.cell_homepage_eventpart1);
-//        RelativeLayout relativeLayout2= view.getRelativeLayout(R.id.cell_homepage_eventpart2);
-//        relativeLayout2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity2.class));
-//            }
-//        });
+        LinearLayout Layout2= view.getLinearLayout(R.id.id_langxue_ly2);
+        LinearLayout Layout1= view.getLinearLayout(R.id.id_liangxue_ly1);
+       Layout1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity2.class));
+            }
+        });
 //
-//        relativeLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity2.class));
-//            }
-//        });
+        Layout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Mydata.context.startActivity(new Intent(Mydata.context, WebViewActivity2.class));
+            }
+        });
 //        imgv1=view.getImageView(R.id.id_home_event_img);
 //        imgv2=view.getImageView(R.id.id_home_event2_img);
 //        text1=view.getTextView(R.id.id_home_event_zhuti);

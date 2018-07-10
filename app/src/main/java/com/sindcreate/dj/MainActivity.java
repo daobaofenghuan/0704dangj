@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.sindcreate.dj.adapter.MainRecycleAdapter;
 import com.sindcreate.dj.bean.Mydata;
+import com.sindcreate.dj.comm.params.MHandler;
 import com.sindcreate.dj.fragment.EducationFragment2;
 import com.sindcreate.dj.fragment.HomePage.Part_DangRI_Fragmenttwo;
 import com.sindcreate.dj.fragment.HomePage.Part_SanHuiYiKe_Fragment;
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @SuppressLint("HandlerLeak")
-    public Handler handler = new Handler() {
+    public MHandler handler = new MHandler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);

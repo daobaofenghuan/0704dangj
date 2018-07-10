@@ -20,6 +20,7 @@ import com.sindcreate.dj.bean.MsgNum;
 import com.sindcreate.dj.comm.CommUtil;
 import com.sindcreate.dj.comm.bean.HuoDongBean;
 import com.sindcreate.dj.comm.bean.NewsBean;
+import com.sindcreate.dj.comm.params.MHandler;
 import com.sindcreate.dj.fragment.AbsBaseFragment;
 import com.sindcreate.dj.model.Entry;
 
@@ -38,9 +39,10 @@ public class HuodongFragment extends AbsBaseFragment<Entry> {
   //  private ArrayList<NewsBean> newslist = new ArrayList<>();
     private HuoDongBean bean;
     @SuppressLint("HandlerLeak")
-    private Handler mhandler = new Handler() {
+    private MHandler mhandler = new MHandler() {
         @Override
         public void handleMessage(Message msg) {
+            super.handleMessage(msg);
             if (msg.what == MsgNum.Part3) {
                 String data = (String) msg.obj;
                 Gson gson = new Gson();
@@ -125,10 +127,10 @@ public class HuodongFragment extends AbsBaseFragment<Entry> {
         //根据实体生成Cell
         List<Cell> cells = new ArrayList<>();
         // cells.add(new Drangri_title(null));
-      cells.add(new Huodong_part1(null));
+      cells.add(new Huodong_part1(bean));
 
         cells.add(new Huodong_part2xiu0630(bean));
-        cells.add(new Huodong_part3xiu0630(null));
+        cells.add(new Huodong_part3xiu0630(bean));
         return cells;
     }
 

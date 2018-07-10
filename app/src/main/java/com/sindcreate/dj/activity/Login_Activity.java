@@ -18,6 +18,7 @@ import com.sindcreate.dj.R;
 import com.sindcreate.dj.base.MyBaseActivity;
 import com.sindcreate.dj.comm.COMM;
 import com.sindcreate.dj.comm.CommUtil;
+import com.sindcreate.dj.comm.params.MHandler;
 import com.sindcreate.dj.util.ACache;
 import com.sindcreate.dj.util.StatusBarUtils;
 
@@ -30,9 +31,10 @@ public class Login_Activity extends MyBaseActivity {
 @BindView(R.id.id_login_button)
 TextView loginbut;
 @SuppressLint("HandlerLeak")
-private Handler mhandler=new Handler(){
+private MHandler mhandler=new MHandler(){
     @Override
     public void handleMessage(Message msg) {
+
         if (msg.what==COMM.OK)
         {
         startActivity(new Intent(Login_Activity.this, MainActivity.class));//TODO 後面傢finish或者main为干掉其他启动
