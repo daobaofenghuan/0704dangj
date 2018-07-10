@@ -8,29 +8,36 @@ package com.sindcreate.dj.cell.messagecell;
 
 import android.annotation.SuppressLint;
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.base.basecell.RVBaseCell;
 import com.sindcreate.dj.base.basecell.RVBaseViewHolder;
+import com.sindcreate.dj.bean.MsgNum;
+import com.sindcreate.dj.comm.CommUtil;
+import com.sindcreate.dj.comm.bean.Notice_NewsBean;
+import com.sindcreate.dj.comm.params.MHandler;
 import com.sindcreate.dj.model.Entry;
-
+import com.sindcreate.dj.util.ToastUtil;
 
 
 /**
  * Created by Double on 2018/5/23.
  */
 
-public class Part_message extends RVBaseCell<Entry> {
+public class Part_message extends RVBaseCell<Notice_NewsBean> {
     //警示教育
     public static final int TYPE = 502;
     RelativeLayout dui;
-    public Part_message(Entry entry){
+    public Part_message(Notice_NewsBean entry){
         super(entry);
 
 
@@ -39,13 +46,28 @@ public class Part_message extends RVBaseCell<Entry> {
     public int getItemType() {
         return TYPE;
     }
+    String noticeid;
+    @SuppressLint("HandlerLeak")
+    private MHandler handler=new MHandler(){
+
+        @Override
+        public void handleMessage(Message msg) {
+            if(msg.what== MsgNum.OK){
+               // String data= (String) msg.obj;
+                ToastUtil.showText("确认成功");
+
+
+
+            }
+            super.handleMessage(msg);
+        }
+    };
 
     @SuppressLint("InflateParams")
     @Override
     public RVBaseViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         RVBaseViewHolder view= new RVBaseViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_message_part1_1,parent,false));
-
 
        RelativeLayout rydown=view.getRelativeLayout(R.id.id_message_rlydown);
        // ImageView down=view.getImageView(R.id.id_message_icondown);
@@ -70,17 +92,17 @@ public class Part_message extends RVBaseCell<Entry> {
 
     @Override
     public void onBindViewHolder(final RVBaseViewHolder holder, int position) {
-        if(mData.flag1){
-            System.out.println("阅读过了");
-           new Handler().postDelayed(new Runnable() {
-               @Override
-               public void run() {
-                   holder.getRelativeLayout(R.id.id_message_iconright).setVisibility(View.VISIBLE);
-                   //holder.dui.setVisibility(View.VISIBLE);
-               }
-           },300);
-          }else {
-            System.out.println("没阅读过");
+//        if(mData.flag1){
+//            System.out.println("阅读过了");
+//           new Handler().postDelayed(new Runnable() {
+//               @Override
+//               public void run() {
+//                   holder.getRelativeLayout(R.id.id_message_iconright).setVisibility(View.VISIBLE);
+//                   //holder.dui.setVisibility(View.VISIBLE);
+//               }
+//           },300);
+//          }else {
+//            System.out.println("没阅读过");
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -90,7 +112,26 @@ public class Part_message extends RVBaseCell<Entry> {
 
 
 
-        }
+   //     }
+
+        TextView title=holder.getTextView(R.id.id_notice_title);
+        title.setText(mData.getNoticeTheme());
+        TextView nr=holder.getTextView(R.id.id_notice_nr);
+        nr.setText(mData.getNoticeContent());
+        TextView time=holder.getTextView(R.id.id_notice_time);
+        time.setText(mData.getEffictiveTime());
+
+
+
+        TextView textok=holder.getTextView(R.id.id_notice_OK);
+        textok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CommUtil.setNoticeNewsOK(handler,mData.getNoticePeopleId(),null);
+            }
+        });
+
+
 
     }
 

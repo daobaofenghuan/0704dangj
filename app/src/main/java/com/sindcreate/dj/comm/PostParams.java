@@ -28,8 +28,9 @@ public class PostParams {
     public String partyAffairsDetailId; //任务ID
 
     public String registerPlace;//签到地点
-
-
+    public String upfile;//文件名字
+    public String noticePeopleId;//通知id
+    public String readPlace;
 
 
 

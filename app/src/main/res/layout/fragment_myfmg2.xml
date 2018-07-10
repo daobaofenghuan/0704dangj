@@ -12,7 +12,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp">
+            android:layout_height="@dimen/param_40dp">
 
             <TextView
                 android:id="@+id/id_title_text"
@@ -151,7 +151,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/id_my_text_jifen"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/param_8dp"
                 android:layout_toRightOf="@+id/id_my_text_jifen"
                 android:text="208"
                 android:textColor="@color/dj_bj_huang"
@@ -201,54 +201,145 @@
 
 
     </RelativeLayout>
-
-
-
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/param_46dp">
-
-    <ImageView
-        android:id="@+id/id_my_img_gr"
-        android:layout_width="13dp"
-        android:layout_height="@dimen/param_18dp"
-        android:layout_alignParentStart="true"
-
-        android:layout_centerVertical="true"
-        android:layout_marginStart="23dp"
-        android:src="@mipmap/icon_my_01" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/param_13dp"
-        android:layout_marginLeft="@dimen/param_10dp"
-        android:layout_marginTop="@dimen/param_14dp"
-        android:layout_toRightOf="@+id/id_my_img_gr"
-        android:text="个人信息"
-        android:textColor="@color/dj_textcolor_4"
-        android:textSize="@dimen/param_13dp"
-
-        />
-
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@mipmap/icon_right"
-    android:layout_marginTop="@dimen/param_13dp"
-    android:layout_marginBottom="@dimen/param_20dp"
-    android:layout_marginRight="@dimen/param_18dp"
-    android:layout_alignParentRight="true"
-    />
-
-</RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_0.5dp"
         android:background="@color/dj_dim2"
 
         />
+    <RelativeLayout
+        android:id="@+id/id_my_collectly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_46dp">
+
+        <ImageView
+            android:id="@+id/id_my_img_gr2"
+            android:layout_width="@dimen/param_13dp"
+            android:layout_height="@dimen/param_15dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/param_26dp"
+            android:src="@mipmap/icon_my_03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/param_13dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginTop="@dimen/param_14dp"
+            android:layout_toRightOf="@+id/id_my_img_gr2"
+            android:text="我的收藏"
+            android:textColor="@color/dj_textcolor_4"
+            android:textSize="@dimen/param_13dp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right"
+            android:layout_marginTop="@dimen/param_13dp"
+            android:layout_marginBottom="@dimen/param_20dp"
+            android:layout_marginRight="@dimen/param_18dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0.5dp"
+        android:background="@color/dj_dim2"
+
+        />
+    <RelativeLayout
+        android:id="@+id/id_my_mydangfeily"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_46dp">
+
+        <ImageView
+            android:id="@+id/id_my_img_gr4"
+            android:layout_width="@dimen/param_13dp"
+            android:layout_height="@dimen/param_15dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/param_26dp"
+            android:src="@mipmap/icon_dangfei_hei" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/param_13dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginTop="@dimen/param_14dp"
+            android:layout_toRightOf="@+id/id_my_img_gr4"
+            android:text="我的党费"
+            android:textColor="@color/dj_textcolor_4"
+
+            android:textSize="@dimen/param_13dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right"
+            android:layout_marginTop="@dimen/param_13dp"
+            android:layout_marginBottom="@dimen/param_20dp"
+            android:layout_marginRight="@dimen/param_18dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0.5dp"
+        android:background="@color/dj_dim2"
+
+        />
+    <RelativeLayout
+        android:id="@+id/id_my_myfoot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_46dp">
+
+        <ImageView
+            android:id="@+id/id_my_img_gr3"
+            android:layout_width="@dimen/param_13dp"
+            android:layout_height="@dimen/param_15dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/param_26dp"
+            android:src="@mipmap/icon_my_04" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/param_13dp"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:layout_marginTop="@dimen/param_14dp"
+            android:layout_toRightOf="@+id/id_my_img_gr3"
+            android:text="我的足迹"
+            android:textColor="@color/dj_textcolor_4"
+
+            android:textSize="@dimen/param_13dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_right"
+            android:layout_marginTop="@dimen/param_13dp"
+            android:layout_marginBottom="@dimen/param_20dp"
+            android:layout_marginRight="@dimen/param_18dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_0.5dp"
+        android:background="@color/dj_dim2"
+
+        />
+
 
 
     <RelativeLayout
@@ -258,11 +349,11 @@
 
         <ImageView
             android:id="@+id/id_my_img_wode"
-            android:layout_width="13dp"
-            android:layout_height="@dimen/param_18dp"
+            android:layout_width="@dimen/param_13dp"
+            android:layout_height="@dimen/param_15dp"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="26dp"
+            android:layout_marginStart="@dimen/param_26dp"
             android:src="@mipmap/icon_my_02" />
 
         <TextView
@@ -297,19 +388,24 @@
         />
 
 
+
+
+
+
     <RelativeLayout
-        android:id="@+id/id_my_collectly"
+        android:id="@+id/id_setly"
         android:layout_width="match_parent"
         android:layout_height="@dimen/param_46dp">
 
         <ImageView
-            android:id="@+id/id_my_img_gr2"
-            android:layout_width="13dp"
-            android:layout_height="18dp"
+            android:id="@+id/id_my_img_gr"
+            android:layout_width="11dp"
+            android:layout_height="@dimen/param_15dp"
             android:layout_alignParentStart="true"
+
             android:layout_centerVertical="true"
-            android:layout_marginStart="26dp"
-            android:src="@mipmap/icon_my_03" />
+            android:layout_marginStart="@dimen/param_26dp"
+            android:src="@mipmap/icon_set" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -317,101 +413,12 @@
             android:layout_marginBottom="@dimen/param_13dp"
             android:layout_marginLeft="@dimen/param_10dp"
             android:layout_marginTop="@dimen/param_14dp"
-            android:layout_toRightOf="@+id/id_my_img_gr2"
-            android:text="我的收藏"
+            android:layout_toRightOf="@+id/id_my_img_gr"
+            android:text="设置"
             android:textColor="@color/dj_textcolor_4"
             android:textSize="@dimen/param_13dp"
 
             />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/icon_right"
-            android:layout_marginTop="@dimen/param_13dp"
-            android:layout_marginBottom="@dimen/param_20dp"
-            android:layout_marginRight="@dimen/param_18dp"
-            android:layout_alignParentRight="true"
-            />
-
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/dj_dim2"
-
-        />
-
-    <RelativeLayout
-        android:id="@+id/id_my_myfoot"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/param_46dp">
-
-        <ImageView
-            android:id="@+id/id_my_img_gr3"
-            android:layout_width="@dimen/param_18dp"
-            android:layout_height="18dp"
-            android:layout_alignParentStart="true"
-
-            android:layout_centerVertical="true"
-            android:layout_marginStart="26dp"
-            android:src="@mipmap/icon_my_04" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/param_13dp"
-            android:layout_marginLeft="@dimen/param_10dp"
-            android:layout_marginTop="@dimen/param_14dp"
-            android:layout_toRightOf="@+id/id_my_img_gr3"
-            android:text="我的足迹"
-            android:textColor="@color/dj_textcolor_4"
-
-            android:textSize="@dimen/param_13dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/icon_right"
-            android:layout_marginTop="@dimen/param_13dp"
-            android:layout_marginBottom="@dimen/param_20dp"
-            android:layout_marginRight="@dimen/param_18dp"
-            android:layout_alignParentRight="true"
-            />
-
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/param_0.5dp"
-        android:background="@color/dj_dim2"
-
-        />
-    <RelativeLayout
-        android:id="@+id/id_my_mydangfeily"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/param_46dp">
-
-        <ImageView
-            android:id="@+id/id_my_img_gr4"
-            android:layout_width="@dimen/param_18dp"
-            android:layout_height="18dp"
-            android:layout_alignParentStart="true"
-
-            android:layout_centerVertical="true"
-            android:layout_marginStart="26dp"
-            android:src="@mipmap/icon_my_04" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/param_13dp"
-            android:layout_marginLeft="@dimen/param_10dp"
-            android:layout_marginTop="@dimen/param_14dp"
-            android:layout_toRightOf="@+id/id_my_img_gr4"
-            android:text="我的党费"
-            android:textColor="@color/dj_textcolor_4"
-
-            android:textSize="@dimen/param_13dp" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -443,5 +450,10 @@
         android:textColor="@color/white"
         android:background="@drawable/yuanjiaored_4dp"
         />
+
+
+
+
+
 
 </LinearLayout>

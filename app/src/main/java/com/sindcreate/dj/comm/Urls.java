@@ -25,7 +25,12 @@ public class Urls {
 //工作任务列表
     public final static String GET_WORK_DATA="/api/task/queryTask";
     //工作任务详细
-    public final static String GET_WORK_INDEX="/api/task/delete/" ;
+    public final static String GET_WORK_INDEX="/api/task/detail/" ;
+    //消息通知
+    public final static String GET_NOTICE_NEWS="/api/notice/queryNotice";
+//消息通知确认 阅读
+    public final static String SET_NOTICE_OK="/api/notice/readNotice";
+
 
 
 

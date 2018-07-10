@@ -1,24 +1,44 @@
 package com.sindcreate.dj.comm;
 
+import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
 import com.google.gson.Gson;
 import com.sindcreate.dj.application.MyApplication;
+import com.sindcreate.dj.comm.OKutil.CountingRequestBody;
+import com.sindcreate.dj.comm.OKutil.HttpCallback;
+import com.sindcreate.dj.comm.OKutil.OkHttpUtils;
 import com.sindcreate.dj.comm.params.NewsParams;
 import com.sindcreate.dj.util.ACache;
 import com.sindcreate.dj.util.ThreadManager;
 
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.net.FileNameMap;
+import java.net.URLConnection;
+import java.net.URLEncoder;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Double on 2018/5/7.
  */
 
 public class CommUtil {
+    private static final MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=utf-8");//JSON数据格式
+    private static final MediaType MEDIA_TYPE_STREAM = MediaType.parse("application/octet-stream");//二进制流数据
+    private static final MediaType MEDIA_TYPE_TEXT = MediaType.parse("text/plain");//纯文本格式
+    private static final MediaType MEDIA_TYPE_FORM = MediaType.parse("form-data");//纯文本格式
     static PostParams Params = new PostParams();
     public static boolean flag = false;
 
@@ -162,16 +182,36 @@ public static void getSanhuiIng(Handler mhandler,int part) {
         Postgetdatas(url,null,mhandler);
 
     }
-
+    //12工作任务详情
     public  static void getWorkDataIndex(Handler mhandler,String workid){
         String url = Urls.BASE_URL + Urls.    GET_WORK_INDEX+workid;
         Postgetdata(url,null,mhandler);
 
     }
+//13 图片
+    public static void  PostIMGBitmap(Handler handler,Bitmap bitmap,String filename){
+        String url = Urls.BASE_URL + Urls.    GET_WORK_INDEX;
+        Params=new NewsParams();
+        Params.upfile=filename;
+    //    PostBitmap(url,bitmap,handler);
+    }
 
+//14消息通知
+    public static void getNoticeNews(Handler handler){
+        String url=Urls.BASE_URL+Urls.GET_NOTICE_NEWS;
+        Postgetdatas(url,null,handler);
 
+    }
+//15消息通知确认
+    public static void  setNoticeNewsOK(Handler handler,String noticeid,String readplace){
+        String url=Urls.BASE_URL+Urls.SET_NOTICE_OK;
+   Params =new NewsParams();
+   Params.noticePeopleId=noticeid;
+   Params.readPlace=readplace;
 
+        Postgetdata(url,Params,handler);
 
+    }
 
 
 
@@ -483,19 +523,19 @@ public static void getSanhuiIng(Handler mhandler,int part) {
 
 
 
-    private static void Pos(final String url, final PostParams params, final Handler handler) {
+    private static void PostBitmap(final String url, final Bitmap bitmap, final Handler handler, final String filename) {
 new ThreadManager();
 
 
         new Thread() {
             @Override
             public void run() {
+
                 System.out.println("==========================================================================");
                 Log.e("db_test_databack", url);
-                Gson gson = new Gson();
-                StringBuffer data = new StringBuffer(gson.toJson(params));
-                Log.e("db_test_post", data.toString());
-                StringBuffer ssr = HttpUrls.post(url, data);
+
+
+                StringBuffer ssr = HttpUrls.postBitmap(url, bitmap,filename);
                 String databack = ssr.toString();
                 System.out.println("==========================================================================");
                 Log.e("db_test_databack", databack);
@@ -526,6 +566,73 @@ new ThreadManager();
         }.start();
 
 
+    }
+
+
+    /**
+     * @param file     上传文件
+     * @param pic_key  上传图片关键字
+     * @param files    上传文件集合
+     * @param params   请求参数
+     * @param callback 请求回调
+     * @Description RequestBody对象
+     */
+    private static RequestBody builderFileFormData(File file, String pic_key, List<File> files, Map<String, String> params, final HttpCallback callback) {
+        CountingRequestBody countingRequestBody = null;
+
+        if (file != null) {
+            RequestBody requestBody = RequestBody.create(MEDIA_TYPE_STREAM, file);
+            countingRequestBody = new CountingRequestBody(requestBody, new CountingRequestBody.Listener() {
+                @Override
+                public void onRequestProgress(long byteWritted, long contentLength) {
+                    OkHttpUtils.sendProgressResultCallback(byteWritted, contentLength, callback);
+                }
+            });
+        } else {
+            MultipartBody.Builder builder = new MultipartBody.Builder()
+                    .setType(MultipartBody.FORM);//设置为表单类型，如果提交的是表单一定要设置这句
+
+            if (params != null && !params.isEmpty()) {
+                for (String key : params.keySet()) {
+                    builder.addFormDataPart(key, params.get(key));
+                }
+            }
+
+            if (files != null && !files.isEmpty()) {
+                for (File mFile : files) {
+                    RequestBody fileBody = RequestBody.create(MediaType.parse(guessMimeType(mFile.getName())), mFile);
+                    builder.addFormDataPart(pic_key, mFile.getName(), fileBody);
+                }
+            }
+
+            countingRequestBody = new CountingRequestBody(builder.build(), new CountingRequestBody.Listener() {
+                @Override
+                public void onRequestProgress(long byteWritted, long contentLength) {
+                    OkHttpUtils.sendProgressResultCallback(byteWritted, contentLength, callback);
+                }
+            });
+        }
+
+        return countingRequestBody;
+    }
+
+
+    /**
+     * @param filename 文件名
+     * @Description 获取MediaType
+     */
+    private static String guessMimeType(String filename) {
+        FileNameMap fileNameMap = URLConnection.getFileNameMap();
+        String contentTypeFor = null;
+        try {
+            contentTypeFor = fileNameMap.getContentTypeFor(URLEncoder.encode(filename, "UTF-8"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        if (contentTypeFor == null) {
+            contentTypeFor = "image/png";
+        }
+        return contentTypeFor;
     }
 
 

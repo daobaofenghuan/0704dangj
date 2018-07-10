@@ -44,7 +44,7 @@
         </RelativeLayout>
 
         <TextView
-
+              android:id="@+id/id_notice_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -79,6 +79,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/id_notice_nr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/param_11dp"
@@ -92,11 +93,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/param_22dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/param_22dp"
             android:layout_marginTop="@dimen/param_22dp">
 
             <TextView
+              android:layout_alignParentTop="true"
+                android:id="@+id/id_notice_time"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/param_22dp"
                 android:layout_marginLeft="@dimen/param_10dp"
@@ -106,8 +109,9 @@
                 />
 
             <TextView
+                android:id="@+id/id_notice_OK"
                 android:layout_width="@dimen/param_71dp"
-                android:layout_height="@dimen/param_22dp"
+                android:layout_height="@dimen/param_30dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="@dimen/param_10dp"

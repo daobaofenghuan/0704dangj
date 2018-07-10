@@ -53,7 +53,7 @@ public class MyFragment extends Fragment {
     }
 
 
-    @OnClick({R.id.title_img,R.id.id_my_mydangfeily,R.id.id_my_myfoot,R.id.id_my_collectly,R.id.id_turnsettingly,R.id.id_my_ly_jifen})
+    @OnClick({R.id.title_img,R.id.id_my_mydangfeily,R.id.id_my_myfoot,R.id.id_my_collectly,R.id.id_turnsettingly,R.id.id_my_ly_jifen,R.id.id_setly})
     public  void  goback(View v){
         Message msg=Message.obtain();
         switch (v.getId()){
@@ -82,7 +82,8 @@ public class MyFragment extends Fragment {
             case R.id.id_my_ly_jifen:
                 getActivity().startActivity(new Intent(getContext(), JiFenActivity.class));
                 break;
-
+            case  R.id.id_setly:
+                getActivity().startActivity(new Intent(getActivity(), SettingActivity.class));
         }
 
     }

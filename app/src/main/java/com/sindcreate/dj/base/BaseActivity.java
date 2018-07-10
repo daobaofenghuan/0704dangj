@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.sindcreate.dj.R;
 
 import java.nio.Buffer;
@@ -19,6 +20,7 @@ import butterknife.OnClick;
  */
 
 public class BaseActivity extends MyBaseActivity{
+  public  Gson gson=new Gson();
 @BindView(R.id.id_title_text)
   public  TextView titletext;
     @Override

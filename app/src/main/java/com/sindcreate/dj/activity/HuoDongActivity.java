@@ -22,7 +22,7 @@ public static String  workid="";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_huodong);
         ButterKnife.bind(this);
-        titletext.setText("活动详情");
+        titletext.setText("详情");
         System.out.println("活动详情");
         Mydata.contexthuodong=this;
         Intent intent=getIntent();
